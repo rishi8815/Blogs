@@ -46,14 +46,15 @@ const Navbar = () => {
         justifyContent: 'space-between',
         padding: '0.5rem 1rem'
       }}>
-        <Link to="/" className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+        {/* Changed from Link to div to make it a heading instead of a link */}
+        <div className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.8rem', fontWeight: '700', color: '#333', textDecoration: 'none' }}>
           <img 
             src="/getnaukrilogo.png" 
             alt="GetNaukri Logo" 
-            style={{ height: '32px', width: '32px' }}
+            style={{ height: '34px', width: '34px' }}
           />
-          <span>GetNaukri</span>
-        </Link>
+          <span>getnaukri</span>
+        </div>
         
         {/* Show Home button and Search bar only on desktop */}
         {!isMobile && (

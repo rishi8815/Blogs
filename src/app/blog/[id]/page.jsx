@@ -113,25 +113,32 @@ const BlogDetailPage = () => {
           <p>{section.content}</p>
         ) : Array.isArray(section.content) ? (
           <ul className="list-disc pl-5">
-            {section.content.map((item, itemIndex) => (
-              <li key={itemIndex}>{item}</li>
-            ))}
+            {section.content.map((item, itemIndex) => {
+              // Handle objects with subheading and text properties
+              if (typeof item === 'object' && item !== null && !Array.isArray(item)) {
+                if (item.subheading && item.text) {
+                  return (
+                    <li key={itemIndex}>
+                      <strong>{item.subheading}</strong>
+                      <pre className="whitespace-pre-wrap">{item.text}</pre>
+                    </li>
+                  );
+                } else {
+                  // Handle other object types by converting to string
+                  return <li key={itemIndex}>{JSON.stringify(item)}</li>;
+                }
+              }
+              // Handle regular string items
+              return <li key={itemIndex}>{item}</li>;
+            })}
           </ul>
         ) : null}
-        
-        {/* Handle subsections with text content */}
-        {section.content && typeof section.content === 'object' && !Array.isArray(section.content) && (
-          <div className="ml-4">
-            {section.content.subheading && <h3 className="font-bold">{section.content.subheading}</h3>}
-            {section.content.text && <p className="whitespace-pre-line">{section.content.text}</p>}
-          </div>
-        )}
       </div>
     ));
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-4">
+    <div className="max-w-4xl mx-auto p-4 mt-8">
       <header className="mb-6">
         <h1 className="text-3xl font-bold">{blogPost.title}</h1>
         <p className="text-gray-600">{blogPost.date}</p>
@@ -139,8 +146,8 @@ const BlogDetailPage = () => {
 
       <section className="container">
         {blogPost.image && (
-          <div className="blog-image mb-6">
-            <img src={blogPost.image} alt={blogPost.title} className="w-full rounded-lg" />
+          <div className="blog-image-rectangle mb-8">
+            <img src={blogPost.image} alt={blogPost.title} className="w-full h-auto rounded-lg" />
           </div>
         )}
         
