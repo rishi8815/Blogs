@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Building2, User } from 'lucide-react';
 
 const Navbar = () => {
-  const [searchQuery, setSearchQuery] = useState('');
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -20,17 +20,9 @@ const Navbar = () => {
     return () => window.removeEventListener('resize', checkIfMobile);
   }, []);
 
-  const handleSearch = (e) => {
+  const handleLogoClick = (e) => {
     e.preventDefault();
-    // For now, we'll just log the search query
-    console.log('Search query:', searchQuery);
-    // In a real application, you would redirect to search results page
-    // or filter the blog posts based on the query
-  };
-
-  const handleHomeClick = (e) => {
-    e.preventDefault();
-    // Reset any state and reload the home page
+    // Refresh the current page and navigate to home
     window.location.href = '/';
   };
 
@@ -46,8 +38,21 @@ const Navbar = () => {
         justifyContent: 'space-between',
         padding: '0.5rem 1rem'
       }}>
-        {/* Changed from Link to div to make it a heading instead of a link */}
-        <div className="logo" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.8rem', fontWeight: '700', color: '#333', textDecoration: 'none' }}>
+        {/* Logo area on the left */}
+        <div 
+          className="logo" 
+          onClick={handleLogoClick}
+          style={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            gap: '0.5rem', 
+            fontSize: '1.8rem', 
+            fontWeight: '700', 
+            color: '#333', 
+            textDecoration: 'none',
+            cursor: 'pointer'
+          }}
+        >
           <img 
             src="/getnaukrilogo.png" 
             alt="GetNaukri Logo" 
@@ -56,17 +61,17 @@ const Navbar = () => {
           <span>getnaukri</span>
         </div>
         
-        {/* Show Home button and Search bar only on desktop */}
+        {/* Show navigation links only on desktop */}
         {!isMobile && (
           <div style={{ 
             display: 'flex', 
             alignItems: 'center', 
-            gap: '2rem',
-            marginLeft: 'auto'
+            gap: '1rem'
           }}>
             <a 
-              href="/" 
-              onClick={handleHomeClick} 
+              href="https://www.getnaukri.co/" 
+              target="_blank"
+              rel="noopener noreferrer"
               style={{ 
                 color: '#333', 
                 textDecoration: 'none', 
@@ -81,57 +86,116 @@ const Navbar = () => {
               Home
             </a>
             
-            <form onSubmit={handleSearch} style={{ 
-              display: 'flex', 
-              alignItems: 'center', 
-              gap: '0.5rem'
-            }}>
-              <div style={{ position: 'relative' }}>
-                <input
-                  type="text"
-                  placeholder="Search blogs..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  style={{
-                    padding: '0.5rem 0.5rem 0.5rem 2rem',
-                    borderRadius: '20px',
-                    border: '1px solid #ccc',
-                    width: '200px',
-                    fontSize: '0.9rem'
-                  }}
-                />
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  width="16" 
-                  height="16" 
-                  fill="currentColor" 
-                  viewBox="0 0 16 16"
-                  style={{
-                    position: 'absolute',
-                    left: '0.75rem',
-                    top: '50%',
-                    transform: 'translateY(-50%)',
-                    color: '#666'
-                  }}
-                >
-                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                </svg>
-              </div>
-              <button type="submit" style={{ 
-                backgroundColor: '#007bff',
-                color: 'white',
-                border: 'none',
-                borderRadius: '20px',
-                padding: '0.5rem 1rem',
-                cursor: 'pointer',
+            {/* Navigation links */}
+            <a 
+              href="https://www.getnaukri.co/find-jobs" 
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ 
+                color: '#333', 
+                textDecoration: 'none', 
                 fontWeight: '500',
-                transition: 'background-color 0.3s ease'
+                padding: '0.5rem 1rem',
+                borderRadius: '4px',
+                cursor: 'pointer'
               }}
-              onMouseEnter={(e) => e.target.style.backgroundColor = '#0056b3'}
-              onMouseLeave={(e) => e.target.style.backgroundColor = '#007bff'}>
-                Search
-              </button>
-            </form>
+              onMouseEnter={(e) => e.target.style.color = '#007bff'}
+              onMouseLeave={(e) => e.target.style.color = '#333'}
+            >
+              Find Jobs
+            </a>
+            
+            <a 
+              href="https://www.getnaukri.co/about-us" 
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ 
+                color: '#333', 
+                textDecoration: 'none', 
+                fontWeight: '500',
+                padding: '0.5rem 1rem',
+                borderRadius: '4px',
+                cursor: 'pointer'
+              }}
+              onMouseEnter={(e) => e.target.style.color = '#007bff'}
+              onMouseLeave={(e) => e.target.style.color = '#333'}
+            >
+              About Us
+            </a>
+            
+            <a 
+              href="https://blogs.getnaukri.co/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ 
+                color: '#333', 
+                textDecoration: 'none', 
+                fontWeight: '500',
+                padding: '0.5rem 1rem',
+                borderRadius: '4px',
+                cursor: 'pointer'
+              }}
+              onMouseEnter={(e) => e.target.style.color = '#007bff'}
+              onMouseLeave={(e) => e.target.style.color = '#333'}
+            >
+              Blogs
+            </a>
+            
+            {/* Employer Login link with Building2 icon */}
+            <a 
+              href="https://www.getnaukri.co/login/employer" 
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ 
+                color: '#333', 
+                textDecoration: 'none', 
+                fontWeight: '500',
+                padding: '0.5rem 1rem',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem'
+              }}
+              onMouseEnter={(e) => e.target.style.color = '#007bff'}
+              onMouseLeave={(e) => e.target.style.color = '#333'}
+            >
+              <Building2 size={16} />
+              Employer Login
+            </a>
+            
+            {/* Candidate Login button with gradient styling */}
+            <a 
+              href="https://www.getnaukri.co/login/jobseeker" 
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ 
+                background: 'linear-gradient(to right, #2563eb, #9333ea)',
+                color: 'white',
+                textDecoration: 'none',
+                fontWeight: '500',
+                padding: '0.5rem 1.5rem',
+                borderRadius: '0.5rem',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                transition: 'all 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.background = 'linear-gradient(to right, #1d4ed8, #7e22ce)';
+                e.target.style.transform = 'translateY(-2px)';
+                e.target.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.background = 'linear-gradient(to right, #2563eb, #9333ea)';
+                e.target.style.transform = 'translateY(0)';
+                e.target.style.boxShadow = 'none';
+              }}
+            >
+              <User size={16} />
+              Candidate Login
+            </a>
           </div>
         )}
       </div>

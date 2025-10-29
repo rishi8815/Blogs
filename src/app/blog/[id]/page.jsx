@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import blogData from '../../../data/blogs.json';
 
 const BlogDetailPage = () => {
   const { id } = useParams();
   
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // Find the blog post by ID
   const blogPost = blogData.find(blog => blog.id === parseInt(id)) || {
     title: "Blog Post",
@@ -26,7 +31,8 @@ const BlogDetailPage = () => {
           {post.content.sections && post.content.sections.map((section, index) => (
             <div key={index} className="mb-6">
               <h2 className="text-xl font-bold mb-2">{section.heading}</h2>
-              {section.description && <p className="mb-2">{section.description}</p>}
+              {section.description && <p className="mb-2">{section.description}</p>
+}
               {section.mistake && <p className="mb-2"><strong>Mistake:</strong> {section.mistake}</p>}
               {section.fix && <p className="mb-2"><strong>Fix:</strong> {section.fix}</p>}
               {section.content && <p className="mb-2">{section.content}</p>}

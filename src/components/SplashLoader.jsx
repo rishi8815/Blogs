@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-
 import './SplashLoader.css';
 
 const SplashLoader = () => {
@@ -34,14 +33,20 @@ const SplashLoader = () => {
   return (
     <div className={`splash-loader ${!isVisible ? 'hidden' : ''}`}>
       <div className="loader-content">
-        {/* Redesigned spinner with multiple rings */}
-        <div className="spinner-container">
-          <div className="spinner-ring"></div>
-          <div className="spinner-ring"></div>
-          <div className="spinner-ring"></div>
+        {/* Logo in round shape */}
+        <div className="logo-container">
+          <img 
+            src="/getnaukrilogo.png" 
+            alt="GetNaukri Logo" 
+            className="splash-logo"
+          />
         </div>
         <div className="loader-text">GetNaukri</div>
         <div className="loader-subtext">Loading opportunities for you...</div>
+        {/* Simplified spinner - placed below subtext */}
+        <div className="spinner-container">
+          <div className="spinner-ring"></div>
+        </div>
       </div>
     </div>
   );
