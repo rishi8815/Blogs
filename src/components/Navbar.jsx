@@ -70,7 +70,7 @@ const Navbar = () => {
           }}>
             <a 
               href="https://www.getnaukri.co/" 
-              target="_blank"
+              
               rel="noopener noreferrer"
               style={{ 
                 color: '#333', 
@@ -89,7 +89,7 @@ const Navbar = () => {
             {/* Navigation links */}
             <a 
               href="https://www.getnaukri.co/find-jobs" 
-              target="_blank"
+              
               rel="noopener noreferrer"
               style={{ 
                 color: '#333', 
@@ -107,7 +107,7 @@ const Navbar = () => {
             
             <a 
               href="https://www.getnaukri.co/about-us" 
-              target="_blank"
+              
               rel="noopener noreferrer"
               style={{ 
                 color: '#333', 
@@ -124,8 +124,8 @@ const Navbar = () => {
             </a>
             
             <a 
-              href="https://blogs.getnaukri.co/" 
-              target="_blank"
+              href="/" 
+              
               rel="noopener noreferrer"
               style={{ 
                 color: '#333', 
@@ -144,7 +144,7 @@ const Navbar = () => {
             {/* Employer Login link with Building2 icon */}
             <a 
               href="https://www.getnaukri.co/login/employer" 
-              target="_blank"
+              
               rel="noopener noreferrer"
               style={{ 
                 color: '#333', 
@@ -167,7 +167,7 @@ const Navbar = () => {
             {/* Candidate Login button with gradient styling */}
             <a 
               href="https://www.getnaukri.co/login/jobseeker" 
-              target="_blank"
+              
               rel="noopener noreferrer"
               style={{ 
                 background: 'linear-gradient(to right, #2563eb, #9333ea)',

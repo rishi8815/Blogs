@@ -1,6 +1,40 @@
 [
+  {
+"id": 15,
+"title": "Don’t just quit—leave with purpose. Here's how to know if it’s the right time.",
+"excerpt": "Thinking about leaving your job? Learn how to recognize when it’s time to move on and how to leave with purpose — ensuring your next career move truly serves your goals.",
+"date": "2025-06-20",
+"image": "/5.png",
+"content": {
+"introduction": "Making the decision to leave a job is never easy, especially if you’ve invested time, energy, and emotional commitment into your role. However, there comes a point in many careers when leaving a current job is the right move. Whether it's a personal choice, career growth opportunity, or a response to workplace challenges, making sure you're leaving for the right reasons can ensure that your next move is fulfilling and beneficial for both your personal and professional life. In this blog, we’ll walk through the key questions and reflections to help you determine whether it's time to move on — and how to do it in a way that supports your long-term career goals.",
+"sections": [
+{
+"heading": "1. Recognize the Signs That It Might Be Time to Move On",
+"description": "Before diving into the decision-making process, it's important to reflect on your current situation. Are there recurring signs or patterns in your job that might indicate it's time to leave? While each situation is unique, some universal signs include lack of growth opportunities, constant burnout, poor management support, or misalignment with your personal goals and values."
+},
+{
+"heading": "2. Reflect on Your Career Goals",
+"description": "Ask yourself where you see your career heading in the next few years. If your current role doesn’t align with your aspirations or isn’t helping you grow the skills you value, it may be time to explore other opportunities. Leaving with clarity — not frustration — ensures your next step is purposeful."
+},
+{
+"heading": "3. Evaluate Your Work-Life Balance",
+"description": "If your current job consistently affects your health, personal relationships, or mental peace, it’s worth reconsidering. A good job should support your life, not consume it. Reflect on whether the trade-off between work and personal satisfaction is sustainable for you."
+},
+{
+"heading": "4. Consider Internal Opportunities First",
+"description": "Before you decide to leave, explore whether there are growth opportunities within your current organization. Sometimes, a new project, transfer, or role change can reignite your motivation and offer new learning experiences without starting over elsewhere."
+},
+{
+"heading": "5. Prepare Before You Resign",
+"description": "Once you’ve made up your mind to leave, plan the transition carefully. Update your resume, organize your finances, and ensure you have a clear next step — whether it’s another job, upskilling, or a career break. Leaving strategically helps you maintain professionalism and peace of mind."
+}
+],
+"conclusion": "Leaving a job can be an emotional and challenging decision, but it doesn’t have to be impulsive. When you take time to reflect, plan, and align your decision with your long-term goals, you leave with confidence and purpose. Remember, every ending opens the door to a new beginning — one that’s better suited for your growth and happiness. If you’re ready for a career shift, take a thoughtful approach, seek guidance if needed, and trust that moving on can be the best step forward."
+}
+}
+,
  {
-  "id": 1,
+  "id": 14,
   "title": "Top 10 Mistakes Freshers Make While Applying for Jobs",
   "excerpt": "Avoid common mistakes freshers make while applying for jobs. From using the same resume everywhere to ignoring internships, learn how to improve your chances of getting hired faster with smart strategies and platforms like GetNaukri.",
   "date": "2025-01-27",
@@ -64,7 +98,7 @@
 },
 
   {
-  "id": 2,
+  "id": 13,
   "title": "How to Get an Internship for Freshers with No Experience?",
   "excerpt": "Learn what stipend-based internships are, why they matter for freshers, and how to prepare for interviews, mentorship, and job success with the help of GetNaukri — your smart job and internship platform.",
   "date": "2024-12-27",
@@ -217,7 +251,7 @@
 }
 ,
  {
-  "id": 3,
+  "id": 12,
   "title": "How to Rebuild Confidence After a Career Break",
   "excerpt": "Took a career break? You're not alone. Learn practical steps to regain your confidence, rebuild your skills, and re-enter the workforce stronger than ever — with help from GetNaukri’s tools, mentorship, and job search strategies.",
   "date": "2024-08-20",
@@ -333,7 +367,7 @@
 }
 ,
  {
-  "id": 4,
+  "id": 11,
   "title": "Your Exit Strategy Starts Here: What to Do After Leaving Your Job",
   "excerpt": "Leaving a job can feel overwhelming, but it's also a chance to pause, reflect, and reset your career path. This guide walks you through practical steps, emotional balance, and smart career moves to make your transition successful and meaningful.",
   "date": "2024-08-8",
@@ -424,7 +458,7 @@
 }
 ,
   {
-  "id": 5,
+  "id": 10,
   "title": "When Opportunity Knocks Twice, Negotiate Smart!",
   "excerpt": "Receiving multiple job offers is a career jackpot. Learn how to manage competing offers, negotiate better pay and benefits, and choose the opportunity that aligns best with your goals.",
   "date": "2024-07-27",
@@ -520,7 +554,7 @@
   ]
 },
 {
-  "id": 6,
+  "id": 9,
   "title": "Salary Talks Made Easy: Proven Scripts",
   "excerpt": "Master the art of salary negotiation with real-life scripts and strategies for every situation — from countering offers to requesting raises or negotiating remote work. Learn how to stay confident, professional, and persuasive.",
   "date": "2024-07-3",
@@ -636,7 +670,7 @@
   ]
 }
 ,{
-  "id": 7,
+  "id": 8,
   "title": "Collaboration Over Isolation: Why Cross-Departmental Relationships Are Your Key to Success!",
   "excerpt": "Learn practical, step-by-step strategies to build strong cross-departmental relationships that boost collaboration, visibility, and career growth.",
   "date": "2024-06-29",
@@ -700,7 +734,7 @@
   ]
 }
 ,{
-  "id": 8,
+  "id": 7,
   "title": "Building Cross-Departmental Relationships in a New Company",
   "excerpt": "Learn how to build meaningful relationships beyond your team to boost collaboration, visibility, and career growth in your new company. This guide walks you through practical steps and pro tips for connecting across departments effectively.",
   "date": "2024-06-15",
@@ -799,7 +833,7 @@
   ]
 }
 ,{
-  "id": 9,
+  "id": 6,
   "title": "Mastering Networking in the Office: Build Strong Connections for Career Success",
   "excerpt": "Learn the art of effective office networking to build strong professional relationships, increase visibility, and accelerate your career growth with actionable tips and strategies.",
   "date": "2024-06-01",
@@ -891,7 +925,7 @@
   ]
 }
 ,{
-  "id": 10,
+  "id": 5,
   "title": "Salary Negotiation: How to Respond to a Job Offer Like a Pro",
   "excerpt": "Master the art of salary negotiation with proven strategies, counteroffer examples, and communication tips to help you secure the pay you deserve.",
   "date": "2024-05-25",
@@ -966,7 +1000,7 @@
     }
   ]
 },{
-  "id": 11,
+  "id": 4,
   "title": "Handling Difficult Situations in a New Office with Confidence",
   "excerpt": "Learn how to navigate workplace challenges, handle conflicts professionally, and build resilience in a new office environment.",
   "date": "2024-05-10",
@@ -1034,7 +1068,7 @@
   ]
 }
 ,{
-  "id": 12,
+  "id": 3,
   "title": "How to Succeed in Your New Job",
   "excerpt": "Don't just start a new job — own it! Your roadmap to success from Day 1 with tips on preparation, communication, relationships, and long-term growth.",
   "date": "2024-04-30",
@@ -1130,7 +1164,7 @@
   ]
 }
 ,{
-  "id": 13,
+  "id": 2,
   "title": "From Hello to Hired: Mastering the First 5 Minutes of Your Job Interview for Success",
   "excerpt": "Master the first five minutes of your job interview by understanding body language, communication, and confidence psychology to leave a lasting impression.",
   "date": "2024-04-17",
@@ -1193,7 +1227,7 @@
     }
   ]
 },{
-  "id": 14,
+  "id": 1,
   "title": "How to Build a Job-Winning Resume in 2025",
   "excerpt": "A step-by-step guide to crafting a resume that passes ATS filters, highlights your strengths, and lands you more interviews in 2025.",
   "date": "2024-04-10",
