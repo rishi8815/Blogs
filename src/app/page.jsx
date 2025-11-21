@@ -5,7 +5,7 @@ import blogData from '../data/blogs.json';
 const HomePage = () => {
   return (
     <div>
-      <header style={{ marginTop: '65px' }}>
+      <header>
         <h1>The Blog Book<br/>By GetNaukri</h1>
       </header>
 
