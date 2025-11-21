@@ -142,7 +142,8 @@ nav {
 }
 
 .main-content {
-  padding: 0 0 0.5rem 0;
+  /* Add top padding to avoid overlap with fixed navbar (48px height) */
+  padding: 64px 0 0.5rem 0;
 }
 
 /* Enhanced Latest Posts section */
